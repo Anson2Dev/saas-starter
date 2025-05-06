@@ -1,29 +1,29 @@
-# MCP SaaS Kit模板
+# MCP SaaS Kit 模板
 
-一个现代化的SaaS应用程序启动模板，基于**Next.js 15.4.0-canary.9**构建，集成了用户认证、团队管理、Stripe支付和活动日志等核心功能。专为快速开发和部署而设计，助您在短时间内构建专业级SaaS产品。
+一个现代化的 SaaS 应用程序启动模板，基于**Next.js 15.4.0-canary.9**构建，集成了用户认证、团队管理、Stripe 支付和活动日志等核心功能。专为快速开发和部署而设计，助您在短时间内构建专业级 SaaS 产品。
 
 **演示: [https://mcp.day/](https://mcp.day/)**
-*测试账户: 1@love2.dev, 密码: love2dev*
+~~测试账户: 1@love2.dev, 密码: love2dev~~ 直接注册即可 👻
 
-*[English Documentation](README.md)*
+_[English Documentation](README.md)_
 
 ## ✨ 核心功能
 
-- **用户认证系统** - 基于JWT的安全认证，支持邮箱/密码登录
+- **用户认证系统** - 基于 JWT 的安全认证，支持邮箱/密码登录
 - **团队协作** - 完整的团队创建、成员邀请和权限管理
-- **订阅支付** - 与Stripe无缝集成，支持多种订阅计划
+- **订阅支付** - 与 Stripe 无缝集成，支持多种订阅计划
 - **活动日志** - 全面的用户操作记录系统，便于审计和分析
-- **响应式设计** - 完美适配移动端和桌面端的现代UI
+- **响应式设计** - 完美适配移动端和桌面端的现代 UI
 - **明暗主题** - 支持亮色/暗色主题切换，提升用户体验
 
 ## 🛠️ 技术栈
 
-- **前端框架**: [Next.js 15.4.0-canary.9](https://nextjs.org/) - 支持App Router和React服务器组件
+- **前端框架**: [Next.js 15.4.0-canary.9](https://nextjs.org/) - 支持 App Router 和 React 服务器组件
 - **数据库**: [PostgreSQL](https://www.postgresql.org/) - 可靠的关系型数据库
-- **ORM**: [Drizzle ORM](https://orm.drizzle.team/) - 类型安全的现代ORM
-- **UI组件**: [shadcn/ui](https://ui.shadcn.com/) - 高度可定制的组件库
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/) - 类型安全的现代 ORM
+- **UI 组件**: [shadcn/ui](https://ui.shadcn.com/) - 高度可定制的组件库
 - **支付处理**: [Stripe](https://stripe.com/) - 安全可靠的支付解决方案
-- **样式**: [Tailwind CSS](https://tailwindcss.com/) - 实用优先的CSS框架
+- **样式**: [Tailwind CSS](https://tailwindcss.com/) - 实用优先的 CSS 框架
 - **部署**: 支持[Vercel](https://vercel.com/)一键部署
 
 ## 🚀 快速开始
@@ -38,9 +38,9 @@ pnpm install
 
 ### 环境配置
 
-1. **设置Stripe**
+1. **设置 Stripe**
 
-   [安装Stripe CLI](https://docs.stripe.com/stripe-cli)并登录:
+   [安装 Stripe CLI](https://docs.stripe.com/stripe-cli)并登录:
 
    ```bash
    stripe login
@@ -70,7 +70,7 @@ pnpm install
 
    访问 [http://localhost:3000](http://localhost:3000) 查看应用
 
-5. **监听Stripe Webhook**
+5. **监听 Stripe Webhook**
 
    ```bash
    stripe listen --forward-to localhost:3000/api/stripe/webhook
@@ -78,27 +78,28 @@ pnpm install
 
 ## 💳 测试支付
 
-使用Stripe测试卡:
+使用 Stripe 测试卡:
+
 - 卡号: `4242 4242 4242 4242`
 - 到期日: 任何未来日期
-- CVC: 任何3位数字
+- CVC: 任何 3 位数字
 
 ## 🌐 生产环境部署
 
-### 1. 配置Stripe
+### 1. 配置 Stripe
 
-在Stripe仪表板创建生产环境webhook，端点设为`https://yourdomain.com/api/stripe/webhook`。
+在 Stripe 仪表板创建生产环境 webhook，端点设为`https://yourdomain.com/api/stripe/webhook`。
 
-### 2. 部署到Vercel
+### 2. 部署到 Vercel
 
-1. 将代码推送到GitHub仓库
-2. 在Vercel导入仓库并部署
+1. 将代码推送到 GitHub 仓库
+2. 在 Vercel 导入仓库并部署
 3. 配置以下环境变量:
    - `POSTGRES_URL`: Supabase URL
    - `BASE_URL`: 生产域名
-   - `STRIPE_SECRET_KEY`: 生产环境Stripe密钥
-   - `STRIPE_WEBHOOK_SECRET`: 生产webhook密钥
-   - `POSTGRES_URL`: 生产数据库URL
+   - `STRIPE_SECRET_KEY`: 生产环境 Stripe 密钥
+   - `STRIPE_WEBHOOK_SECRET`: 生产 webhook 密钥
+   - `POSTGRES_URL`: 生产数据库 URL
    - `AUTH_SECRET`: 随机字符串 (`openssl rand -base64 32`)
 
 ## 📂 项目结构
@@ -118,7 +119,7 @@ app/
 
 ## 🔑 项目特色
 
-- **简洁明了的架构** - 基于Next.js App Router的清晰目录结构
+- **简洁明了的架构** - 基于 Next.js App Router 的清晰目录结构
 - **整合的账户管理** - 将账户信息和安全设置整合在一个页面
 - **完整的团队功能** - 支持团队创建、成员邀请和权限管理
 - **多语言支持** - 界面和文档支持中文和英文
@@ -138,10 +139,11 @@ app/
 
 这是我第一个开源项目，所以它可能不是完美的。我需要您的贡献来让它变得更好。
 
-如果您有任何建议或改进，请打开一个issue或提交一个pull request。
+如果您有任何建议或改进，请打开一个 issue 或提交一个 pull request。
 
 有什么疑问，请联系：anson@love2.dev
 
 ## 感谢
+
 - Vercel saas-starter-kit
 - Vibe coder: Augment & Cursor, they're contributing 90% of the code.

@@ -3,11 +3,11 @@
 A modern SaaS application starter template built with **Next.js 15.4.0-canary.9**, featuring user authentication, team management, Stripe payments, and activity logging. Designed for rapid development and deployment, helping you build professional-grade SaaS products in ONE DAY.
 
 **Demo: [https://mcp.day/](https://mcp.day/)**
-*test account: 1@love2.dev, pwd:love2dev*
-*[中文文档](README_zh.md)*
+~~test account: 1@love2.dev, pwd:love2dev~~ register directly👻
+
+_[中文文档](README_zh.md)_
 
 ## ✨ Core Features
-
 
 - **User Authentication** - Secure JWT-based authentication with email/password login
 - **Team Collaboration** - Complete team creation, member invitations, and permission management
@@ -50,7 +50,6 @@ pnpm install
 
    Run the setup script to generate your `.env` file:
 
-
    ```bash
    cp .env.example .env
    // TODO pnpm db:setup
@@ -63,7 +62,6 @@ pnpm install
    // TODO pnpm db:seed
    ```
 
-   
 4. **Start Development Server**
 
    ```bash
@@ -81,6 +79,7 @@ pnpm install
 ## 💳 Test Payments
 
 Use Stripe test card:
+
 - Card Number: `4242 4242 4242 4242`
 - Expiry Date: Any future date
 - CVC: Any 3 digits
@@ -145,5 +144,6 @@ If you have any suggestions or improvements, please open an issue or submit a pu
 For any questions, please contact: anson@love2.dev
 
 ## Thanks
+
 - Vercel saas-starter-kit
 - Vibe coder: Augment & Cursor, they're contributing 90% of the code.
